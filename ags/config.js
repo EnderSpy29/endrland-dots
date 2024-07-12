@@ -2,7 +2,6 @@ const hyprland = await Service.import("hyprland")
 const notifications = await Service.import("notifications")
 const mpris = await Service.import("mpris")
 const audio = await Service.import("audio")
-const battery = await Service.import("battery")
 const systemtray = await Service.import("systemtray")
 
 const date = Variable("", {
@@ -121,25 +120,6 @@ function Volume() {
 }
 
 
-function BatteryLabel() {
-    const value = battery.bind("percent").as(p => p > 0 ? p / 100 : 0)
-    const icon = battery.bind("percent").as(p =>
-        `battery-level-${Math.floor(p / 10) * 10}-symbolic`)
-
-    return Widget.Box({
-        class_name: "battery",
-        visible: battery.bind("available"),
-        children: [
-            Widget.Icon({ icon }),
-            Widget.LevelBar({
-                widthRequest: 140,
-                vpack: "center",
-                value,
-            }),
-        ],
-    })
-}
-
 
 function SysTray() {
     const items = systemtray.bind("items")
@@ -183,7 +163,6 @@ function Right() {
         spacing: 8,
         children: [
             Volume(),
-            BatteryLabel(),
             Clock(),
             SysTray(),
         ],
