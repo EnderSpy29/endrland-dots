@@ -1,5 +1,7 @@
 ## Endrland-Dots
 
+<img src="https://raw.githubusercontent.com/EnderSpy29/Endrland-Dots/main/Showoff/Arch-UwU-Showcase.png">
+
 Get the [Wallpapers!](https://github.com/EnderSpy29/Wacky-Walls/)
 
 To Set up the Themes you need to Install the Space-Dark GTK Theme and the Catppuccin QT theme
