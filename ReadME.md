@@ -22,8 +22,8 @@ then set kvantum as the theme in qt5ct and qt6ct
 
 This is all the required packages and also a Hyprland quickstart at the same time...
 
-grim slurp mesa lib32-mesa xf86-video-amdgpu vulkan-radeon lib32-vulkan-radeon opencl-clover-mesa opencl-rusticl-mesa libva-mesa-driver lib32-libva-mesa-driver mesa-vdpau lib32-mesa-vdpau
+grim slurp neofetch fastfetch mesa lib32-mesa xf86-video-amdgpu vulkan-radeon lib32-vulkan-radeon opencl-clover-mesa opencl-rusticl-mesa libva-mesa-driver lib32-libva-mesa-driver mesa-vdpau lib32-mesa-vdpau
 
 **Packages i know have to be installed from AUR** (yay, paru or whatever you use)
 
-aylurs-gtk-shell-git waypaper wallust 
+aylurs-gtk-shell-git waypaper wallust cava
